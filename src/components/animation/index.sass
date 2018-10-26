@@ -1,0 +1,85 @@
+.wrapper
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 0
+
+.layer
+  position: absolute
+  width: 50%
+  top: 0
+  right: 0
+  height: 100%
+  transform: rotate(-16deg)
+  transition: transform 1000ms
+  will-change: transform
+  div
+    background: rgba($white, .1)
+    background: linear-gradient(to left, rgba(255,255,255,.1) 0%, rgba(255,255,255,.1) 50%, rgba(255,255,255,0) 100%)
+    position: absolute
+
+.m_1
+  div
+    height: 8px
+    width: 74%
+    &:nth-child(1)
+      top: 26%
+      right: -10%
+    &:nth-child(2)
+      bottom: 10%
+      left: 3%
+
+.m_2
+  div
+    height: 8px
+    width: 40%
+    &:nth-child(1)
+      top: 57%
+      right: -10%
+
+.m_3
+  div
+    height: 1px
+    width: 66%
+    &:nth-child(1)
+      top: 14%
+      left: 0
+    &:nth-child(2)
+      top: 44%
+      right: 0
+    &:nth-child(3)
+      top: 75%
+      right: -20%
+
+.m_4
+  div
+    height: 1px
+    width: 50%
+    &:nth-child(1)
+      top: 28%
+      left: -10%
+    &:nth-child(2)
+      top: 59%
+      left: 4%
+    &:nth-child(3)
+      top: 82%
+      right: 12%
+
+.m_5
+  div
+    height: 4px
+    width: 60%
+    &:nth-child(1)
+      top: 40%
+      right: 10%
+    &:nth-child(2)
+      top: 52%
+      left: -20%
+    &:nth-child(3)
+      top: 71%
+      left: 2%
+
+.anim
+  transform: rotate(-16deg) translateX(-6%)

@@ -1,0 +1,13 @@
+{
+  "version": 0.2,
+  "languages": ["en"],
+  "default_language" : "en",
+  "shells": [
+    "index",
+    "main"
+  ],
+  "endpoints": [{
+    "name": "bootstrap",
+    "path": "./bootstrap.js"
+  }]
+}

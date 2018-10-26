@@ -1,0 +1,66 @@
+.wrapper
+  width: 100%
+  height: 100%
+  position: relative
+  text-align: center
+  padding-top: 96px
+  padding-bottom: 113px
+  &:before
+    height: 100%
+    display: inline-block
+    vertical-align: middle
+    content: ''
+    width: 0
+
+.content
+  display: inline-block
+  vertical-align: middle
+  width: 100%
+
+.button
+  position: absolute
+  left: 3.125%
+  width: 147px
+  font-size: 18px
+
+.form_wrapper
+  display: inline-block
+  max-width: 45%
+
+
+@media only screen and (max-width: $medium)
+  .wrapper
+    padding-top: 73px
+
+  .content
+    padding: 0 130px
+
+  .button
+    min-height: 54px
+    width: 120px
+    padding: 0 25px
+    font-size: 14px
+    line-height: 1.7
+  
+  .form_wrapper
+    max-width: 574px
+
+@media only screen and (max-width: $small)
+  .wrapper
+    text-align: left
+
+  .content
+    padding: 0
+
+  .button
+    position: static
+    margin-bottom: 36px
+    width: 82px
+    min-height: 36px
+    font-size: 12px
+    letter-spacing: -0.6px
+    padding: 0 13px
+
+  .form_wrapper
+    display: block
+    max-width: 100%

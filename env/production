@@ -1,0 +1,9 @@
+NODE_ENV=production
+URL=http://localhost
+PORT=3000
+GIT_URL=https://pentatonica.github.io/app-navicom-energy
+EMAIL=o.andrriy@gmail.com
+
+##### Deployment Configuration #####
+AWS_DEPLOY_BUCKET_NAME=name
+AWS_DEPLOY_REGION=region

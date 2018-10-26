@@ -1,0 +1,15 @@
+AppHeader: IdentityFront Verification demo
+Title: IdentityFront Demo has requested the following information
+Footer: By clicking on the "Get started" button you indicate you consent to our
+Terms: Terms of Service
+FooterAnd: and
+Privacy: Privacy Policy
+PromoBlock:
+  Upper: We need some information to help us verify your identity.
+  Lower: We will use your webcam or smartphone to get everything we need, typically this takes less than a minute.
+IdentitiesList:
+  Photo: Photo of you
+  DriverLicense: Driver's license
+  Passport: Passport
+Button:
+  Start: Get started

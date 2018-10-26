@@ -1,0 +1,31 @@
+.wrapper
+  height: 100%
+  text-align: left
+  padding-top: 115px
+  padding-bottom: 113px
+  &:before
+    height: 100%
+    display: inline-block
+    vertical-align: middle
+    content: ''
+    width: 0
+
+.content
+  display: inline-block
+  vertical-align: middle
+  width: 100%
+
+@media only screen and (max-width: $small)
+  .wrapper
+    padding-top: 0
+    padding-bottom: 0
+    opacity: 1 !important
+    padding-bottom: 162px
+    height: auto !important
+    &:first-of-type
+      padding-top: 62px
+      padding-bottom: 0
+      &:before
+        height: calc(100vh - 62px)
+    &:last-of-type
+      padding-bottom: 0

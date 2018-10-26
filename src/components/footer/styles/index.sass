@@ -1,0 +1,48 @@
+@keyframes anim
+    50% 
+        transform: translate(-50%, 7px)
+        opacity: 0.3
+    100% 
+        transform: translate(-50%, 0px)
+        opacity: 1
+    
+.footer
+    z-index: 4
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    padding-bottom: 70px
+
+.m_hide
+    visibility: false !important
+    opacity: 0 !important
+    
+.mouse_detector
+    transition-duration: 0.3s
+    position: relative
+    opacity: 0.6
+    margin: 0 auto
+    width: 26px
+    height: 43px
+    border: 1px solid rgb(131, 141, 194)
+    border-radius: 12px
+
+.ping
+    animation: anim 1.7s infinite ease
+    position: absolute
+    top: 10px
+    left: 50%
+    transform: translateX(-50%)
+    width: 3px
+    height: 4px 
+    background-color: rgb(131, 141, 194)
+    border-radius: 50%
+
+@media only screen and (max-width: $medium)
+    .footer
+        padding-bottom: 43px
+
+@media only screen and (max-width: $small)
+    .footer
+        display: none

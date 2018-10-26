@@ -1,0 +1,172 @@
+$anim_duration: 1.5s
+$iteration_count: infinite
+$animate_settings: $anim_duration infinite normal forwards
+
+@keyframes translateHorizontalBorder1
+	0
+		transform: translateX(0)
+	10%
+		transform: translateX(100px)
+	100%
+		transform: translateX(100px)
+
+@keyframes translateVerticalBorder1
+	10%
+		transform: translateY(0)
+	20%
+		transform: translateY(100px)
+	100%
+		transform: translateY(100px)
+
+@keyframes translateHorizontalBorder2
+	20%
+		transform: translateX(0)
+	30%
+		transform: translateX(-100px)
+	100%
+		transform: translateX(-100px)
+
+@keyframes translateVerticalBorder2
+	30%
+		transform: translateY(0)
+	40%
+		transform: translateY(-100px)
+	100%
+		transform: translateY(-100px)
+
+@keyframes opacity
+	40%
+		opacity: 1
+	60%
+		opacity: 0
+	100%
+		opacity: 0
+
+@keyframes translateLogoLine1
+	0
+		transform: skewY(-20deg)
+	10%
+		transform: skewY(-20deg) translateX(16px)
+	100%
+		transform: skewY(-20deg) translateX(16px)
+
+@keyframes translateLogoLine2
+	20%
+		transform: skewY(-20deg)
+	30%
+		transform: skewY(-20deg) translateX(16px)
+	100%
+		transform: skewY(-20deg) translateX(16px)
+
+@keyframes translateLogoLine3
+	30%
+		transform: skewY(-20deg)
+	40%
+		transform: skewY(-20deg) translateX(16px)
+	100%
+		transform: skewY(-20deg) translateX(16px)
+
+@keyframes translateCenterLine
+	10%
+		transform: skewY(30deg)
+	20%
+		transform: skewY(30deg) translateX(30px)
+	100%
+		transform: skewY(30deg) translateX(30px)
+
+.preloader
+	width: 100px
+	height: 100px
+	position: relative
+	overflow: hidden
+	animation: opacity $animate_settings
+	transform: translate(-50%, -50%)
+	top: 50%
+	left: 50%
+
+.horizontal_border,
+.vertical_border,
+.logo_line, 
+.logo_center_line
+	position: absolute
+	background-color: #FFFFFF
+
+.horizontal_border
+	animation: translateHorizontalBorder1 $animate_settings
+	height: 5px
+	width: 100px
+	top: 0
+	left: -100px
+	&:nth-child(2)
+		animation: translateHorizontalBorder2 $animate_settings
+		top: 95px
+		left: 100px
+
+.vertical_border
+	animation: translateVerticalBorder2 $animate_settings
+	height: 100px
+	width: 5px
+	top: 100px
+	left: 0
+	&:nth-child(4)
+		animation: translateVerticalBorder1 $animate_settings
+		top: -100px
+		left: 95px
+
+.reverse
+	left: 38px
+
+.container_logo_line
+	position: absolute
+	width: 18px
+	height: 30px
+	top: 20px
+	left: 20px
+	overflow: hidden
+	&.line_second
+		top: 35px
+	&.line_third
+		top: 50px
+		& div
+			animation: translateLogoLine3 $animate_settings
+	&.line_fourth
+		top: 17px
+		left: 65px
+		& div 
+			animation: translateLogoLine3 $animate_settings
+	&.line_fifth
+		top: 32px
+		left: 65px
+		& div 
+			animation: translateLogoLine2 $animate_settings
+	&.line_sixth
+		top: 47px
+		left: 65px
+		& div 
+			animation: translateLogoLine2 $animate_settings
+
+.logo_line
+	animation: translateLogoLine1 $animate_settings
+	top: 19px
+	left: -19px
+	width: 18px
+	height: 8px
+	transform: skewY(-20deg)
+
+.container_central_line
+	position: absolute
+	width: 30px
+	height: 50px
+	top: 25px
+	left: 35px
+	overflow: hidden
+	&.central_second
+		top: 40px
+
+.logo_center_line
+	animation: translateCenterLine $animate_settings
+	top: -4px
+	left: -30px
+	width: 30px
+	height: 8px
+	transform: skewY(35deg)

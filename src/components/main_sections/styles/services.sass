@@ -1,0 +1,90 @@
+.title
+  font-size: 30px
+  line-height: 1.4
+  letter-spacing: 0.75px
+  max-width: 600px
+  margin-bottom: 65px
+  color: $white
+
+.list_item
+  width: 22.3%
+  display: inline-block
+  vertical-align: top
+  margin-right: (100 - 22.3 * 4) / 3 * 1%
+  &:last-child
+    margin-right: 0
+
+.description
+  margin-top: 27px
+  line-height: 1.6
+  font-weight: 300
+  letter-spacing: 0.9px
+  font-size: 18px
+  color: $input_border
+  a
+    position: relative
+    color: $main_yellow
+    border-bottom: 1px solid rgba($main_yellow, .4)
+
+.image
+  border-radius: 2px
+  overflow: hidden
+  img
+    width: 100%
+    display: block
+
+.advantage_list
+  margin-bottom: 100px
+
+.button
+  position: absolute
+  bottom: 65px
+
+@media only screen and (max-width: $medium)
+  .title
+    font-size: 24px
+    line-height: 1.5
+    letter-spacing: 0.6px
+    max-width: 446px
+    margin-bottom: 48px
+
+  .description
+    margin-top: 17px
+    line-height: 1.7
+    letter-spacing: 0.7px
+    font-size: 14px
+
+  .advantage_list
+    margin-bottom: 85px
+
+  .button
+    bottom: 40px
+
+@media only screen and (max-width: $small)
+  .title
+    font-size: 18px
+    line-height: 1.6
+    letter-spacing: 0.45px
+    max-width: 100%
+    margin-bottom: 44px
+
+  .advantage_list
+    margin-bottom: 61px
+
+  .description
+    margin-top: 13px
+
+  .list_item
+    width: 100%
+    display: inline-block
+    margin-bottom: 40px
+    &:last-child
+      margin-bottom: 0
+
+  .button
+    width: 100%
+    position: relative
+    bottom: auto
+
+
+  

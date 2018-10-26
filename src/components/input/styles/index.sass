@@ -1,0 +1,48 @@
+.input
+  position: relative
+  textarea
+    resize: none
+    padding: 18px
+  &_field
+    appearance: none
+    font-family: inherit
+    outline: none
+    box-sizing: border-box
+    letter-spacing: 0.04em
+    width: 100%
+    line-height: 1.4
+    color: $white
+    background: rgba($input_bg, .3)
+    border: 1px solid rgba($input_border, .3)
+    border-radius: 3px
+    transition: color 300ms, border-color 300ms
+    font-size: 18px
+    padding: 0 18px
+    height: 47px
+    &:focus
+      border: 1px solid rgba($input_border, .6)
+    &::placeholder
+      color: rgba($input_border, .3)
+
+  &[data-valid="false"]
+    .input_field
+      color: $input_invalid !important
+      border-color: $input_invalid !important
+
+@media only screen and (max-width: $medium)
+  .input
+    position: relative
+    textarea
+      resize: none
+      padding: 14px
+    &_field
+      height: 36px
+      font-size: 14px
+      padding: 0 14px
+
+@media only screen and (max-width: $small)
+  .input
+    textarea
+      padding: 11px
+    &_field
+      padding: 0 11px

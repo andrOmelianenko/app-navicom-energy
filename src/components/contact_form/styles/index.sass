@@ -1,0 +1,100 @@
+@keyframes spin
+    0%
+      transform: rotate(0deg)
+    100%
+      transform: rotate(360deg)
+
+.input_item
+  width: calc(50% - 15px)
+  margin-bottom: 17px
+  display: inline-block
+  &:nth-child(even)
+    margin-left: 30px
+
+.multiline
+  height: 200px
+
+.loader_block
+  display: inline-block
+  vertical-align: middle
+  width: 20px
+  height: 20px
+  position: relative
+  width: 20px
+  height: 20px
+  margin-right: 20px
+
+.loader
+  position: absolute
+  top: 0
+  left: 0
+  border: 2px solid #3D7DFF
+  border-top: 2px solid #F5F6FA
+  width: 20px
+  height: 20px
+  border-radius: 50%
+  animation: spin 1s linear infinite
+
+.bottom_block
+  margin-top: 52px
+  vertical-align: middle
+  text-align: left
+
+.button
+  width: calc(50% - 30px)
+  height: 61px
+  margin-right: 20px
+  display: inline-block
+  vertical-align: middle
+
+.descr_block
+  vertical-align: middle
+  display: inline-block
+  font-size: 14px
+  line-height: 1.4
+  color: rgba($input_border, .3)
+  width: calc(50% - 30px)
+
+@media only screen and (max-width: $medium)
+  .input_item
+    width: calc(50% - 8px)
+    &:nth-child(even)
+      margin-left: 16px
+  
+  .multiline
+    height: 168px
+
+  .bottom_block
+    margin-top: 37px
+
+  .button
+    height: 54px
+    font-size: 14px
+    padding: 0 20px
+
+  .descr_block
+    font-size: 12px
+
+@media only screen and (max-width: $small)
+  .input_item
+    display: block
+    width: 100%
+    margin: 0 0 12px
+    font-size: 12px
+    letter-spacing: 0.6px
+    &:nth-child(even)
+      margin-left: 0
+
+  .multiline
+    height: 108px
+
+  .bottom_block
+    margin-top: 24px
+
+  .button
+    width: 100%
+    display: block
+    margin: 0
+
+  .descr_block
+    display: none

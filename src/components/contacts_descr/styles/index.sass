@@ -1,0 +1,71 @@
+.title
+  font-size: 30px
+  line-height: 1.4
+  color: $white
+  max-width: 549px
+  margin-bottom: 65px
+
+.contacts
+  display: block
+  font-size: 24px
+  color: #bec5f7
+  vertical-align: middle
+  margin-bottom: 105px
+  font-weight: 300
+  &:first-of-type
+    margin-bottom: 10px
+
+.contacts_icon
+  width: 28px
+  display: inline-block
+  vertical-align: middle
+  margin-right: 12px
+  fill: #bec5f7
+
+.address_title
+  margin-bottom: 20px
+  font-size: 18px
+  color: $white
+  line-height: 1.667
+
+.address_value
+  max-width: 245px
+  font-size: 18px
+  color: #bec5f7
+  line-height: 1.667
+  letter-spacing: 0.7px
+
+@media only screen and (max-width: $medium)
+  .title
+    font-size: 24px
+    line-height: 1.5
+    margin-bottom: 53px
+
+  .contacts
+    font-size: 18px
+    margin-bottom: 83px
+
+  .address_title,
+  .address_value
+    font-size: 14px
+
+  .address_title
+    margin-bottom: 10px
+
+@media only screen and (max-width: $small)
+  .title
+      font-size: 18px
+      line-height: 1.6
+      margin-bottom: 21px
+
+  .contacts_icon
+    width: 21px
+
+  .contacts
+    font-size: 14px
+    text-decoration: underline
+    margin-bottom: 41px
+
+  .address_title,
+  .address_value
+    font-size: 12px
