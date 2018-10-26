@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "env",
+    "stage-0",
+    "react"
+  ],
+  "compact": "false",
+  "plugins": ["transform-runtime"],
+  "env": {
+    "development": {
+      "presets": [],
+      "plugins": []
+    },
+    "production": {
+      "presets": [],
+      "plugins": []
+    }
+  }
+}
