@@ -1,7 +1,7 @@
 NODE_ENV=production
 URL=http://localhost
 PORT=3000
-GIT_URL=https://pentatonica.github.io/app-navicom-energy
+GIT_URL=https://andromelianenko.github.io/app-navicom-energy
 EMAIL=o.andrriy@gmail.com
 
 ##### Deployment Configuration #####
