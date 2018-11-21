@@ -144,6 +144,34 @@
         "heading": "Бурові двигуни Dynomax Mud Motors",
         "advantages": [
           {
+            "sub_heading": "244мм(9-5/8”) 6-7 Lobe 5.0 Stage HR Series 1",
+            "txt_array": []
+          },
+          {
+            "sub_heading": "203мм(8”) 7-8 Lobe 4.0 Stage HR Series 2",
+            "txt_array": []
+          },
+          {
+            "sub_heading": "203мм(8”) 6-7 Lobe 4.0 Stage HR Series 2",
+            "txt_array": []
+          },
+          {
+            "sub_heading": "171мм(6-3/4”) 7-8 Lobe 5.0 Stage HR Series 3",
+            "txt_array": []
+          },
+          {
+            "sub_heading": "171мм(6-3/4”) 6-7 Lobe 5.0 Stage HR Series 3",
+            "txt_array": []
+          },
+          {
+            "sub_heading": "165мм 6 ½  7-8 Lobe 2.9 Stage HR Series 1",
+            "txt_array": []
+          },
+          {
+            "sub_heading": "127мм 5 7-8 Lobe 3.8 Stage HR Series 1",
+            "txt_array": []
+          },
+          {
             "sub_heading": "Конструктивні особливості двигуна:",
             "txt_array": [
               "Герметичний підшипник у масляній ванні",
@@ -178,7 +206,16 @@
         "img_min": "assets/images/subj_1_min.jpg",
         "description": "Під час буріння бурове долото передає різне навантаження динамічної дії на бурильну колону. Різні рівні навантаження мають циклічний характер, і можуть привести до передчасного виходу з ладу бурильної колони і бурового обладнання, а також зниження швидкості проходки і ускладнень в свердловині. Все це призводить до збільшення витрат на буріння.",
         "heading": "Амортизатор компанії DYNOMAX розроблений спеціально для поглинання і послаблення різних динамічних навантажень (від долота під час буріння) в звичайному режимі, методом переривання хвильового циклу створюваного долотом.",
-        "advantages": [],
+        "advantages": [
+          {
+            "sub_heading": "241мм 9 ½ Series 2",
+            "txt_array": []
+          },
+          {
+            "sub_heading": "203мм 8 Series 2",
+            "txt_array": []
+          }
+        ],
         "additional": [
           {
             "name": "",
