@@ -1,0 +1,101 @@
+.about_wrap
+  height: 100%
+  overflow: auto
+  min-width: 320px
+
+.main
+  position: relative
+  height: 100vh
+  background: rgba(0,0,0,.2)
+
+.title
+  position: absolute
+  width: 100%
+  top: 50%
+  transform: translateY(-50%)
+  text-align: center
+  line-height: 1.4
+  font-size: 60px
+  letter-spacing: 1.05px
+  color: $white
+
+.content
+  position: relative
+  max-width: 950px
+  margin: 0 auto
+  padding: 130px 3.125% 100px
+  color: $white
+
+.summary
+  line-height: 1.4
+  font-size: 36px
+  letter-spacing: 1.05px
+  padding-right: 15%
+
+.txt
+  max-width: 640px
+  margin: 0 auto
+  padding: 130px 0 70px
+
+.chunk
+  margin-bottom: 30px
+  line-height: 2
+  font-size: 16px
+  letter-spacing: 1.05px
+
+.list_chunk
+  line-height: 2
+  font-size: 16px
+  letter-spacing: 1.05px
+
+.contact
+  max-width: 640px
+  margin: 0 auto
+  padding-top: 90px
+  border-top: 1px solid rgba(255, 255, 255, 0.3)
+
+.contact_heading
+  line-height: 2
+  font-size: 16px
+  letter-spacing: 1.05px
+  margin-bottom: 30px
+
+.contact_item
+  line-height: 1.8
+  font-size: 24px
+  letter-spacing: 1.05px
+
+.email
+  color: $main_yellow
+  cursor: pointer
+  padding-bottom: 2px
+  border-bottom: 1px solid $main_yellow
+
+@media only screen and (max-width: $small)
+  .title
+    font-size: 36px
+
+  .content
+    padding: 80px 6.25% 80px
+
+  .summary
+    font-size: 20px
+    padding-right: 0
+  
+  .txt
+    padding-top: 80px
+
+  .chunk
+    font-size: 14px
+
+  .list_chunk
+    font-size: 14px
+
+  .contact
+    padding-top: 70px
+
+  .contact_heading
+    font-size: 14px
+
+  .contact_item
+    font-size: 16px

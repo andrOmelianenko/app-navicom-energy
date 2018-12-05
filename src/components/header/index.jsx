@@ -68,12 +68,7 @@ class Header extends Component {
         className={s.menu_item}
         onClick={() => {
           this.closeMenu();
-          history.push({
-            pathname: `${publicPath}/`,
-            search: query.stringify({
-              section: 'projects',
-            }),
-          });
+          history.push(`${publicPath}/about`);
         }}
       >
         {langs.header.menu.projects}

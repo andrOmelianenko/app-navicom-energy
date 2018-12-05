@@ -17,6 +17,13 @@ const Main = ReactLoadable({
   loading: () => null,
 });
 
+const About = ReactLoadable({
+  /* webpackChunkName: "contact" */
+  loader: () => import('../../containers/about/index.jsx')
+    .then(module => module.default),
+  loading: () => null,
+});
+
 const Contact = ReactLoadable({
   /* webpackChunkName: "contact" */
   loader: () => import('../../containers/contact/index.jsx')
@@ -113,6 +120,7 @@ export default class Viewport extends Component {
                 </Switch>
               </Fragment>
             </Route>
+            <Route exact path={`${publicPath}/about`} component={About} />
             <Route exact path={`${publicPath}/contact`} component={Contact} />
             <Route exact path={`${publicPath}/successfully-sended`} component={SuccessfullySended} />
             <Redirect to={`${publicPath}/`} />
