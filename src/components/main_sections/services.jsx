@@ -15,82 +15,32 @@ const ServicesSection = (props, { langs, data }) => (
         {langs.main.second.title}
       </div>
       <div className={ss.advantage_list}>
-        <div className={ss.list_item}>
-          <div className={ss.image}>
-            <ImageLoader
-              minified={`${publicPath}/${langs.main.second.images.first.image_min}`}
-              normal={`${publicPath}/${langs.main.second.images.first.image}`}
-            />
+        {langs.main.second.images.map((el, i) => (
+          <div
+            className={ss.list_item}
+            key={i} // eslint-disable-line
+          >
+            <div className={ss.image}>
+              <ImageLoader
+                asBackground
+                minified={`${publicPath}/${el.image_min}`}
+                normal={`${publicPath}/${el.image}`}
+                className={ss.image_inner}
+              />
+            </div>
+            <div className={ss.description}>
+              <span>
+                {`${el.span} `}
+                <Link
+                  to={`${publicPath}${el.link}`}
+                  href={`${publicPath}${el.link}`}
+                >
+                  {el.a}
+                </Link>
+              </span>
+            </div>
           </div>
-          <div className={ss.description}>
-            <span>
-              {`${langs.main.second.images.first.span} `}
-              <Link
-                to={`${publicPath}/services&equipment/telemetry`}
-                href={`${publicPath}/services&equipment/telemetry`}
-              >
-                {langs.main.second.images.first.a}
-              </Link>
-            </span>
-          </div>
-        </div>
-        <div className={ss.list_item}>
-          <div className={ss.image}>
-            <ImageLoader
-              minified={`${publicPath}/${langs.main.second.images.second.image_min}`}
-              normal={`${publicPath}/${langs.main.second.images.second.image}`}
-            />
-          </div>
-          <div className={ss.description}>
-            <span>
-              {`${langs.main.second.images.second.span} `}
-              <Link
-                to={`${publicPath}/services&equipment/downhole_engine`}
-                href={`${publicPath}/services&equipment/downhole_engine`}
-              >
-                {langs.main.second.images.second.a}
-              </Link>
-            </span>
-          </div>
-        </div>
-        <div className={ss.list_item}>
-          <div className={ss.image}>
-            <ImageLoader
-              minified={`${publicPath}/${langs.main.second.images.third.image_min}`}
-              normal={`${publicPath}/${langs.main.second.images.third.image}`}
-            />
-          </div>
-          <div className={ss.description}>
-            <span>
-              {`${langs.main.second.images.third.span} `}
-              <Link
-                to={`${publicPath}/services&equipment/equipment_services`}
-                href={`${publicPath}/services&equipment/equipment_services`}
-              >
-                {langs.main.second.images.third.a}
-              </Link>
-            </span>
-          </div>
-        </div>
-        <div className={ss.list_item}>
-          <div className={ss.image}>
-            <ImageLoader
-              minified={`${publicPath}/${langs.main.second.images.fourth.image_min}`}
-              normal={`${publicPath}/${langs.main.second.images.fourth.image}`}
-            />
-          </div>
-          <div className={ss.description}>
-            <span>
-              <Link
-                to={`${publicPath}/services&equipment/drilling_team`}
-                href={`${publicPath}/services&equipment/drilling_team`}
-              >
-                {langs.main.second.images.fourth.a}
-              </Link>
-              {` ${langs.main.second.images.fourth.span}`}
-            </span>
-          </div>
-        </div>
+        ))}
       </div>
       <Link
         to={`${publicPath}/services&equipment/${data.services[0].url}`}

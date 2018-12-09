@@ -27,11 +27,18 @@
     border-bottom: 1px solid rgba($main_yellow, .4)
 
 .image
+  position: relative;
   border-radius: 2px
+  padding-bottom: 70%
   overflow: hidden
-  img
-    width: 100%
-    display: block
+
+.image_inner
+  position: absolute
+  width: 100%
+  height: 100%
+  left: 0
+  background-repeat: no-repeat
+  background-size: cover
 
 .advantage_list
   margin-bottom: 100px
