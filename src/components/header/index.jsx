@@ -71,7 +71,7 @@ class Header extends Component {
           history.push(`${publicPath}/about`);
         }}
       >
-        {langs.header.menu.projects}
+        {langs.header.menu.about}
       </div>,
       <div
         key="item4"

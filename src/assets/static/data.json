@@ -5,7 +5,7 @@
       "menu": {
         "main": "Головна",
         "services": "Послуги + Обладнання",
-        "projects": "Про компанію",
+        "about": "Про компанію",
         "contacts": "Контакти"
       }
     },
@@ -87,14 +87,6 @@
           }
         },
         "button": "Всі послуги"
-      },
-      "third": {
-        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "list": {
-          "1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-          "2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-        },
-        "button":"Зв`язатись з менеджером"
       }
     },
     "services": {

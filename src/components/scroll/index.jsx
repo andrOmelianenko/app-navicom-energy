@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import query from '../../utils/query';
 import publicPath from '../../utils/get_build_path';
 
-const sections = ['services', 'projects', 'contacts'];
+const sections = ['services', 'contacts'];
 
 class Scroll extends Component {
   static propTypes = {
