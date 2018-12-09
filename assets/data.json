@@ -5,7 +5,7 @@
       "menu": {
         "main": "Головна",
         "services": "Послуги + Обладнання",
-        "projects": "Про компанію",
+        "about": "Про компанію",
         "contacts": "Контакти"
       }
     },
@@ -25,7 +25,7 @@
       ],
       "contact": {
         "heading": "Для того щоб з’язатися з нами зателефонуйте або надішліть повідомлення:",
-        "phone": "+3 8 (0532) 69-01-40",
+        "phone": "+38 (053) 269 01 40",
         "email": "navicom.energy@gmail.com",
         "address_title": "Адреса офіса:",
         "address": "м. Полтава, вул. Заводська 12б, Україна, 36007."
@@ -60,41 +60,37 @@
       },
       "second": {
         "title": "Злагоджена взаємодія професіоналів та сучасних канадських телесистем і забійних двигунів",
-        "images": {
-          "first": {
+        "images": [
+          {
             "image": "assets/images/services_image_1.jpg",
             "image_min": "assets/images/services_image_1_min.jpg",
             "span": "Висока точність буріння із телесистемою",
-            "a": "Drilltek MWD System"
+            "a": "Drilltek MWD System",
+            "link": "/services&equipment/telemetry"
           },
-          "second": {
+          {
             "image": "assets/images/services_image_2.jpg",
             "image_min": "assets/images/services_image_2_min.jpg",
             "span": "Широкі можливості модифікації",
-            "a": "забійних двигунів Dynоmax"
+            "a": "забійних двигунів Dynоmax",
+            "link": "/services&equipment/downhole_engine"
           },
-          "third": {
+          {
             "image": "assets/images/services_image_3.jpg",
             "image_min": "assets/images/services_image_3_min.jpg",
             "span": "Стабільна робота, забезпечена власною",
-            "a": "базою обслуговування"
+            "a": "базою обслуговування",
+            "link": "/services&equipment/equipment_services"
           },
-          "fourth": {
+          {
             "image": "assets/images/services_image_4.jpg",
             "image_min": "assets/images/services_image_4_min.jpg",
-            "span": "сертифікована у Lorem Ipsum",
-            "a": "Бурова команда,"
+            "span": "Сертифікована у Lorem Ipsum",
+            "a": "бурова команда",
+            "link": "/services&equipment/drilling_team"
           }
-        },
+        ],
         "button": "Всі послуги"
-      },
-      "third": {
-        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "list": {
-          "1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-          "2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-        },
-        "button":"Зв`язатись з менеджером"
       }
     },
     "services": {
