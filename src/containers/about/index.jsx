@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import ImageLoader from '../../components/image_load';
+import publicPath from '../../utils/get_build_path';
 import s from './styles/index.sass';
 
 const AboutContainer = (props, context) => {
@@ -8,11 +10,17 @@ const AboutContainer = (props, context) => {
 
   return (
     <div className={s.about_wrap}>
-      <div className={s.main}>
+      <ImageLoader
+        asBackground
+        minified={`${publicPath}/assets/images/about_min.jpg`}
+        normal={`${publicPath}/assets/images/about.jpg`}
+        className={s.main}
+      >
         <h1 className={s.title}>
           {langs.about.heading}
         </h1>
-      </div>
+        <div className={s.filter} />
+      </ImageLoader>
       <div className={s.content}>
         <p className={s.summary}>{langs.about.summary}</p>
         <div className={s.txt}>
