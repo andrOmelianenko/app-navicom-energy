@@ -54,7 +54,12 @@ class SubjectCanvas extends Component {
             key={index} // eslint-disable-line
             className={s.sub_heading}
           >
-            {elem.sub_heading}
+            {elem.asLink
+              ? (
+                <a target="_blank" rel="noopener noreferrer" href={`${publicPath}/${elem.asLink}`}>
+                  {elem.sub_heading}
+                </a>
+              ) : elem.sub_heading}
           </h3>,
           <ul
             key={`-${index}`} // eslint-disable-line
@@ -94,6 +99,13 @@ class SubjectCanvas extends Component {
           <h2>
             {filteredData.heading}
           </h2>
+          {
+            filteredData.withLink && (
+              <a target="_blank" rel="noopener noreferrer" href={`${publicPath}/${filteredData.withLink}`}>
+                {langs.services.arrow_button}
+              </a>
+            )
+          }
           {
             filteredData.additional && (
               <Link

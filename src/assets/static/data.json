@@ -72,7 +72,7 @@
             "image": "assets/images/services_image_2.jpg",
             "image_min": "assets/images/services_image_2_min.jpg",
             "span": "Широкі можливості модифікації",
-            "a": "забійних двигунів Dynоmax",
+            "a": "вибійних двигунів Dynоmax",
             "link": "/services&equipment/downhole_engine"
           },
           {
@@ -83,11 +83,11 @@
             "link": "/services&equipment/equipment_services"
           },
           {
-            "image": "assets/images/services_image_4.jpg",
-            "image_min": "assets/images/services_image_4_min.jpg",
-            "span": "Сертифікована у Lorem Ipsum",
+            "image": "assets/images/team.jpg",
+            "image_min": "assets/images/team_min.jpg",
+            "span": "Сертифікована у Drilltek MWD",
             "a": "бурова команда",
-            "link": "/services&equipment/drilling_team"
+            "link": "/about"
           }
         ],
         "button": "Всі послуги"
@@ -107,8 +107,8 @@
       {
         "name": "Телеметричне обладнання",
         "url": "telemetry",
-        "img": "assets/images/subj_1.jpg",
-        "img_min": "assets/images/subj_1_min.jpg",
+        "img": "assets/images/telemetry.jpg",
+        "img_min": "assets/images/telemetry_min.jpg",
         "description": "Для отримання даних високої точності в процесі похило-скерованого буріння ми використовуємо передову телеметричну систему Drilltek MWD. В основі принципу передачі сигналів якої лежить гідравлічний канал передачі даних, та яка забезпечує високу надійність на всіх етапах проекту. Вона використовується для вимірювання  в процесі буріння та являє собою систему гідроімпульсних сигналів, що має мінімальну кількість рухомих компонентів. Елементи живлення забезпечують роботу телесистеми до 1000-годин без їх заміни.  Генератор імпульсів, розташований на нижньому кінці приладу, з’єднується з орієнтуючим перехідником UBHO. Інша частина телесистеми центрується всередині  немагнітних обважених труб (НОБТ).",
         "heading": "Комплекс телеметричного обладнання Drilltek MWD System",
         "advantages": [
@@ -129,60 +129,44 @@
             ]
           }
         ],
-        "additional": [
-          {
-            "name": "Gamma / Inclination At Bit",
-            "img": "assets/images/test.jpg",
-            "img_min": "assets/images/test_min.jpg",
-            "pdf": "assets/pdf/test.pdf"
-          },
-          {
-            "name": "Drill-Tek Advanced",
-            "img": "",
-            "pdf": "assets/pdf/test.pdf"
-          },
-          {
-            "name": "Drill-Tek Bottom End (Helix / Plenum / UBHO)",
-            "img": "",
-            "pdf": ""
-          },
-          {
-            "name": "Drill-Tek Bottom End (Helix / Plenum / UBHO)",
-            "img": "",
-            "pdf": ""
-          }
-        ]
+        "withLink": "assets/pdf/telemetry.pdf"
       },
       {
         "name": "Вибійні двигуни",
         "url": "downhole_engine",
-        "img": "assets/images/subj_1.jpg",
-        "img_min": "assets/images/subj_1_min.jpg",
+        "img": "assets/images/engines.jpg",
+        "img_min": "assets/images/engines_min.jpg",
         "description": "Для буріння свердловин ми використовуємо канадські двигуни Dynomax, які спеціально розроблені для безперервної роботи, забезпечуючи додаткову потужність для долота. Вони мають різноманітні роторні та статорні конфігурації для оптимальної продуктивності буріння, а також можливість пробурювати великогабаритні отвори.",
         "heading": "Бурові двигуни Dynomax Mud Motors",
         "advantages": [
           {
             "sub_heading": "244мм(9-5/8”) 6-7 Lobe 5.0 Stage HR Series 1",
+            "asLink": "assets/pdf/engine_1.pdf",
             "txt_array": []
           },
           {
             "sub_heading": "203мм(8”) 7-8 Lobe 4.0 Stage HR Series 2",
+            "asLink": "assets/pdf/engine_2.pdf",
             "txt_array": []
           },
           {
             "sub_heading": "203мм(8”) 6-7 Lobe 4.0 Stage HR Series 2",
+            "asLink": "assets/pdf/engine_3.pdf",
             "txt_array": []
           },
           {
             "sub_heading": "171мм(6-3/4”) 7-8 Lobe 5.0 Stage HR Series 3",
+            "asLink": "assets/pdf/engine_4.pdf",
             "txt_array": []
           },
           {
             "sub_heading": "171мм(6-3/4”) 6-7 Lobe 5.0 Stage HR Series 3",
+            "asLink": "assets/pdf/engine_5.pdf",
             "txt_array": []
           },
           {
             "sub_heading": "165мм 6 ½  7-8 Lobe 2.9 Stage HR Series 1",
+            "asLink": "assets/pdf/engine_6.pdf",
             "txt_array": []
           },
           {
@@ -208,20 +192,13 @@
               "Циркуляційний клапан"
             ]
           }
-        ],
-        "additional": [
-          {
-            "name": "",
-            "img": "",
-            "pdf": ""
-          }
         ]
       },
       {
         "name": "Амортизатори",
         "url": "amortization",
-        "img": "assets/images/subj_1.jpg",
-        "img_min": "assets/images/subj_1_min.jpg",
+        "img": "assets/images/amort.jpg",
+        "img_min": "assets/images/amort_min.jpg",
         "description": "Під час буріння бурове долото передає різне навантаження динамічної дії на бурильну колону. Різні рівні навантаження мають циклічний характер, і можуть привести до передчасного виходу з ладу бурильної колони і бурового обладнання, а також зниження швидкості проходки і ускладнень в свердловині. Все це призводить до збільшення витрат на буріння.",
         "heading": "Амортизатор компанії DYNOMAX розроблений спеціально для поглинання і послаблення різних динамічних навантажень (від долота під час буріння) в звичайному режимі, методом переривання хвильового циклу створюваного долотом.",
         "advantages": [
@@ -233,20 +210,13 @@
             "sub_heading": "203мм 8 Series 2",
             "txt_array": []
           }
-        ],
-        "additional": [
-          {
-            "name": "",
-            "img": "",
-            "pdf": ""
-          }
         ]
       },
       {
         "name": "Інженерний супровід",
         "url": "project_support",
-        "img": "assets/images/subj_1.jpg",
-        "img_min": "assets/images/subj_1_min.jpg",
+        "img": "assets/images/support.jpg",
+        "img_min": "assets/images/support_min.jpg",
         "description": "Спеціалісти Navicom Energy здійснюють проектне супроводження кожної свердловини з метою мінімалізації ризиків при похило-скерованому бурінні. Наші проекти ґрунтуються на нашому багаторічному досвіді та детальному аналізі вхідних даних замовника і враховують всі технічні можливості наявного обладнання.",
         "heading": "Компетентне проектне супроводження буріння похило-скерованих свердловин",
         "advantages": [
@@ -260,8 +230,8 @@
       {
         "name": "Обслуговування обладнання",
         "url": "equipment_services",
-        "img": "assets/images/subj_1.jpg",
-        "img_min": "assets/images/subj_1_min.jpg",
+        "img": "assets/images/service.jpg",
+        "img_min": "assets/images/service_min.jpg",
         "heading": "Власна база обслуговування з найновішим обладнанням задля забезпечення ефективної та безперервної реалізації проектів",
         "advantages": [
           {
