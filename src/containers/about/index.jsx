@@ -43,7 +43,8 @@ const AboutContainer = (props, context) => {
         </div>
         <div className={s.contact}>
           <p className={s.contact_heading}>{langs.about.contact.heading}</p>
-          <p className={s.contact_item}>{langs.about.contact.phone}</p>
+          <p className={s.contact_item}>{langs.about.contact.phone1}</p>
+          <p className={s.contact_item}>{langs.about.contact.phone2}</p>
           <a href={`mailto:${langs.about.contact.email}`} className={classNames(s.contact_item, s.email)}>
             {langs.about.contact.email}
           </a>
